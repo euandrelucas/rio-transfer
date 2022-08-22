@@ -15,7 +15,7 @@ client.on('messageCreate', async (message) => {
         let attach = new AttachmentBuilder(attachment.url)
         attachments.push(attach)
     })
-    if (message.channel.id === config.elixir) {
+    if (message.channel.id === config.tribunal) {
         const row = new ActionRowBuilder()
         .addComponents(
             new ButtonBuilder()
@@ -45,7 +45,7 @@ client.on('interactionCreate', async (interaction) => {
             let attach = new AttachmentBuilder(attachment.url)
             attachments.push(attach)
         })
-        const channel = await client.channels.cache.get(config.tribunal)
+        const channel = await client.channels.cache.get(config.elixir)
         return channel.send({
             content: message.content,
             files: attachments,
