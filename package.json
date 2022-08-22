@@ -1,0 +1,12 @@
+{
+  "name": "rio-transfer",
+  "version": "1.0.0",
+  "main": "rio.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "discord.js": "^14.3.0"
+  }
+}
